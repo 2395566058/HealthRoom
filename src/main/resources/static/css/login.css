@@ -1,0 +1,33 @@
+.register {
+	width: 365px;
+	height: auto;
+	position: absolute;
+	left: 47%;
+	top: 50%;
+	margin: -100px 0 0 -150px;
+}
+
+.form-control{
+	height: 45px;
+	width: 300px;
+	background: #857A81;
+	border: 0;
+	color: white;
+}
+.form-control:focus {
+	background: #857A81;
+	color: white;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
+	color: white !important;
+}
+
+.btn-primary{
+	height: 106px;
+	background : #F4452E !important;
+	border: 0;
+	position: absolute;
+	right: 1px;
+	top: 54px;
+}

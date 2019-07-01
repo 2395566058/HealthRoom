@@ -1,0 +1,17 @@
+server:
+   port: 8849
+   servlet:
+      context-path: /HealthRoom
+spring:
+   datasource:
+      url: jdbc:mysql://127.0.0.1:3306/healthroom?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=CST&autoReconnect=true&testOnBorrow=true
+      username: kemao_2
+      password: 1234
+      driver-class-name: com.mysql.cj.jdbc.Driver
+   servlet: 
+      multipart: 
+         max-file-size: 50Mb
+         max-request-size: 100Mb
+mybatis:
+   mapper-locations: classpath:mapper/*.xml
+   type-aliases-package: swim.gdkm.poji
