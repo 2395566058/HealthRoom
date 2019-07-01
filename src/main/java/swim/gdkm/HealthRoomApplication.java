@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("swim.gdkm.dao")
-public class WeixinApplication {
+public class HealthRoomApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(WeixinApplication.class, args);
+		SpringApplication.run(HealthRoomApplication.class, args);
 	}
 
 }
