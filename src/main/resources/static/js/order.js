@@ -1,3 +1,4 @@
+var day=null;
 //day5
 function five() {
 	var five = document.getElementById('five')
@@ -17,6 +18,7 @@ function five() {
 	document.getElementById('nine').removeAttribute("style");
 	document.getElementById('ten').removeAttribute("style");
 	document.getElementById('eleven').removeAttribute("style");
+	day="5";
 }
 
 //day6
@@ -38,6 +40,7 @@ function six() {
 	document.getElementById('nine').removeAttribute("style");
 	document.getElementById('ten').removeAttribute("style");
 	document.getElementById('eleven').removeAttribute("style");
+	day="6";
 }
 
 //day7
@@ -59,6 +62,7 @@ function seven() {
 	document.getElementById('nine').removeAttribute("style");
 	document.getElementById('ten').removeAttribute("style");
 	document.getElementById('eleven').removeAttribute("style");
+	day="7";
 }
 
 //day8
@@ -80,6 +84,7 @@ function eight() {
 	document.getElementById('nine').removeAttribute("style");
 	document.getElementById('ten').removeAttribute("style");
 	document.getElementById('eleven').removeAttribute("style");
+	day="8";
 }
 
 //day9
@@ -101,6 +106,7 @@ function nine() {
 	document.getElementById('eight').removeAttribute("style");
 	document.getElementById('ten').removeAttribute("style");
 	document.getElementById('eleven').removeAttribute("style");
+	day="9";
 }
 
 //day10
@@ -122,6 +128,7 @@ function ten() {
 	document.getElementById('eight').removeAttribute("style");
 	document.getElementById('nine').removeAttribute("style");
 	document.getElementById('eleven').removeAttribute("style");
+	day="10";
 }
 
 //day11
@@ -143,4 +150,5 @@ function eleven() {
 	document.getElementById('eight').removeAttribute("style");
 	document.getElementById('nine').removeAttribute("style");
 	document.getElementById('ten').removeAttribute("style");
+	day="11";
 }
