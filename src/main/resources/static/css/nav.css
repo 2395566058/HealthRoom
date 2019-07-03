@@ -1,0 +1,35 @@
+.navbar {
+	height: 56px;
+	background: #f8f8f8;
+	border-top: 1px solid #b5b5b5;
+}
+
+.nav-bottom {
+	width: 20%;
+	height: 56px;
+	margin-top: -8px;
+	font-size: 3.5vh;
+	text-align: center;
+	color: #a1a1a1;
+}
+
+.nav-font {
+	margin-top: -8px;
+	font-size: 1.8vh;
+	color: #a1a1a1;
+}
+
+.nav-bottom-active {
+	width: 20%;
+	height: 56px;
+	margin-top: -8px;
+	font-size: 3.5vh;
+	text-align: center;
+	color: #31affe;
+}
+
+.nav-font-active {
+	font-size: 1.8vh;
+	margin-top: -8px;
+	color: #31affe;
+}

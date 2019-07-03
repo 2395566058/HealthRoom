@@ -13,11 +13,8 @@ public class RegisterServiceImpl implements RegisterService{
 	private RegisterDao registerDao;
 	@Override
 	public boolean addRegisterByMap(Map map) {
-		int result=registerDao.addRegisterByMap(map);
-		if(result==1) {
-			return true;
-		}
-		return false;
+		boolean result=registerDao.addRegisterByMap(map);
+		return result;
 	}
 
 }

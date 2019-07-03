@@ -59,16 +59,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-		<!-- thymeleaf组件依赖 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 		</dependency>
-		<!-- 数据库驱�?-->
+		<!-- 数据库驱�?-->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
@@ -89,7 +84,7 @@
 				<configuration>
 					<executable>true</executable>
 					<fork>true</fork>
-					<jmxPort>5000</jmxPort>
+					<jmxPort>6000</jmxPort>
 				</configuration>
 			</plugin>
 		</plugins>

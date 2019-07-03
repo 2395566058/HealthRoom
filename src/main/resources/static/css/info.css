@@ -1,0 +1,215 @@
+ul,
+li {
+	list-style: none;
+	;
+}
+
+.slide-box {
+	margin-bottom: 10%;
+	display: -webkit-box;
+	overflow-x: auto;
+	/*适应苹果*/
+	-webkit-overflow-scrolling: touch;
+}
+
+.slide-item {
+	width: 38vh;
+	height: 38vh;
+	margin-left: 5%;
+}
+
+/*隐藏掉滚动条*/
+.slide-box::-webkit-scrollbar {
+	display: none;
+}
+
+.info {
+	margin-top: 30px;
+	margin-left: 5%;
+	font-size: 3.5vh;
+	font-weight: bold;
+}
+
+.hr {
+	float: right;
+	width: 95%;
+	margin-top: -5px;
+}
+
+.subtitle {
+	margin-left: 5%;
+	font-size: 2.8vh;
+}
+
+.depict {
+	margin-top: -10px;
+	margin-left: 5%;
+	font-size: 2.1vh;
+	color: #9b9b9b;
+}
+
+.card1 {
+	float: left;
+	width: 38vh;
+	height: 38vh;
+	margin-left: -10%;
+	background: url(../img/info1.png);
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.card2 {
+	float: left;
+	width: 38vh;
+	height: 38vh;
+	margin-left: -10%;
+	background: url(../img/info2.png);
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.card3 {
+	float: left;
+	width: 38vh;
+	height: 38vh;
+	margin-left: -10%;
+	background: url(../img/info3.png);
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.card4 {
+	float: left;
+	width: 38vh;
+	height: 38vh;
+	margin-left: -10%;
+	background: url(../img/info4.png);
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.card5 {
+	float: left;
+	width: 38vh;
+	height: 38vh;
+	margin-left: -10%;
+	background: url(../img/info5.png);
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.card6 {
+	float: left;
+	width: 38vh;
+	height: 38vh;
+	margin-left: -10%;
+	background: url(../img/info6.png);
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.classify {
+	width: 10vh;
+	height: 3vh;
+	margin-top: 6%;
+	margin-left: 8%;
+	background: #31affe;
+	border-radius: 0.2em;
+	color: white;
+	font-weight: bold;
+	line-height: 3vh;
+	text-align: center;
+}
+
+.classify2 {
+	width: 7vh;
+	height: 3vh;
+	margin-top: 6%;
+	margin-left: 8%;
+	background: #31affe;
+	border-radius: 0.2em;
+	color: white;
+	font-weight: bold;
+	line-height: 3vh;
+	text-align: center;
+}
+
+.gradient {
+	width: 100%;
+	height: 40%;
+	margin-top: 47%;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(transparent), to(#1c1c1c));
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.card-tittle {
+	float: left;
+	width: 75%;
+	padding-left: 8%;
+	padding-top: 9%;
+	color: white;
+	font-weight: bold;
+	font-size: 3.1vh;
+}
+
+.card-icon {
+	width: 13%;
+	margin-top: 18%;
+	margin-left: 5%;
+}
+
+.clear {
+	clear: both;
+}
+
+.navbar {
+	height: 56px;
+	background: #f8f8f8;
+	border-top: 1px solid #b5b5b5;
+}
+
+.nav-bottom {
+	width: 20%;
+	height: 56px;
+	margin-top: -8px;
+	font-size: 3.5vh;
+	text-align: center;
+	color: #a1a1a1;
+}
+
+.nav-font {
+	margin-top: -8px;
+	font-size: 1.8vh;
+	color: #a1a1a1;
+}
+
+.nav-bottom-active {
+	width: 20%;
+	height: 56px;
+	margin-top: -8px;
+	font-size: 3.5vh;
+	text-align: center;
+	color: #31affe;
+}
+
+.nav-font-active {
+	font-size: 1.8vh;
+	margin-top: -8px;
+	color: #31affe;
+}
+
+.tittle {
+	float: left;
+	margin-left: 5%;
+	font-size: 2.3vh;
+	font-weight: bold;
+}
+
+.info-icon {
+	float: right;
+	width: 3.2vh;
+	margin-left: 1%;
+	margin-right: 5%;
+	margin-top: 5%;
+}

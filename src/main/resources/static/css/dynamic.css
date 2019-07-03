@@ -1,0 +1,105 @@
+.hr {
+	float: right;
+	width: 95%;
+	margin-top: -5px;
+}
+
+.info {
+	margin-top: 30px;
+	margin-left: 5%;
+	font-size: 3.5vh;
+	font-weight: bold;
+}
+
+.subtitle {
+	margin-left: 5%;
+	font-size: 2.8vh;
+}
+
+.sum {
+	margin-left: 4%;
+	color: #31affe;
+	font-size: 10vh;
+	font-weight: bold;
+	background-image:-webkit-linear-gradient(bottom,#14beff,#4a87ff); 
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color:transparent; 
+	margin-top: -10%;
+	margin-bottom: -3%;
+}
+
+.sum2 {
+	margin-left: 5%;
+	color: #31affe;
+	font-size: 2.5vh;
+	font-weight: bold;
+}
+
+.tittle {
+	font-size: 2vh;
+	font-weight: bold;
+	color: #1f1f1f;
+	margin-left: 5%;
+}
+
+.describe {
+	float: right;
+	margin-right: 5%;
+	color: #14BEFF;
+}
+
+.healthcard {
+	height: 46vh;
+	margin-top: 7%;
+	background: #31affe;
+	overflow: scroll;
+}
+
+.tittle-health {
+	color: white;
+	font-weight: bold;
+	font-size: 2.5vh;
+	padding-top: 5%;
+	margin-left: 5%;
+	margin-bottom: -2%;
+}
+
+.tittle-health2 {
+	color: white;
+	font-weight: bold;
+	font-size: 3.5vh;
+	margin-left: 5%;
+}
+
+.tittle-health3 {
+	color: white;
+	font-weight: bold;
+	font-size: 2.5vh;
+	margin-left: 1%;
+}
+
+.list {
+	width: 90%;
+	height: 5vh;
+	margin-left: 5%;
+	margin-top: 3%;
+	background: white;
+	border-radius: 0.5em;
+}
+
+.theme {
+	line-height: 5vh;
+	padding-left: 2%;
+	font-size: 2.5vh;
+	color: #a8a8a8;
+	font-weight: bold;
+}
+
+.answer {
+	float: right;
+	padding-right: 2%;
+	line-height: 5vh;
+	font-size: 2.5vh;
+	font-weight: bold;
+	color: #333333;
+}

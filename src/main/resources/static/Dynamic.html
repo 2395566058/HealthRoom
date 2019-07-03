@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/dynamic.css">
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
+		<!-- Bootstrap4 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		<title>健之小屋</title>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but defaultvue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<!-- 顶部 -->
+			<p class="info">动态</p>
+			<hr class="hr" />
+			<!-- 挂诊次数 -->
+			<p class="subtitle">挂诊次数</p>
+			<p class="sum" id="">0</p>
+			<p class="sum2">次</p>
+			<hr style="margin-top: 7%;margin-bottom: 7%;" />
+
+			<!-- 患病史 -->
+			<span class="tittle">遗传病</span><span class="describe">暂无记录</span>
+			<br />
+			<span class="tittle">患病史</span><span class="describe">暂无记录</span>
+
+			<!-- 体检表 -->
+			<div class="healthcard">
+				<p class="tittle-health">健康管理</p>
+				<span class="tittle-health2">5</span><span class="tittle-health3">类</span>
+
+				<!-- 列条 -->
+				<div class="list">
+					<span class="theme">视力(左)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">视力(右)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">矫正视力(左)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">矫正视力(右)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">辨色力</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">砂眼(左)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">砂眼(右)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">其他眼疾</span><span class="answer">无</span>
+				</div>
+				<div class="list">
+					<span class="theme">听力(左)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">听力(右)</span><span class="answer">???</span>
+				</div>
+				<div class="list">
+					<span class="theme">耳疾</span><span class="answer">无</span>
+				</div>
+				<div class="list">
+					<span class="theme">嗅觉</span><span class="answer">正常</span>
+				</div>
+				<div class="list">
+					<span class="theme">鼻及鼻窦疾病</span><span class="answer">无</span>
+				</div>
+				<div class="list">
+					<span class="theme">咽喉</span><span class="answer">正常</span>
+				</div>
+				<div class="list">
+					<span class="theme">唇腭</span><span class="answer">正常</span>
+				</div>
+				<div class="list">
+					<span class="theme">口吃</span><span class="answer">无</span>
+				</div>
+				<div class="list">
+					<span class="theme">缺齿</span><span class="answer">无</span>
+				</div>
+				<br />
+			</div>
+
+			<!-- 底部导航栏 -->
+			<br /><br />
+			<nav class="navbar fixed-bottom">
+				<div class="nav-bottom">
+					<a href="Info.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-comment"></i>
+						<p class="nav-font">资讯</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Order.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-claim"></i>
+						<p class="nav-font">预约</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Medicalinsurance.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-finance"></i>
+						<p class="nav-font">医保</p>
+					</a>
+				</div>
+
+				<div class="nav-bottom">
+					<a href="Tablet.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-goods"></i>
+						<p class="nav-font">药品</p>
+					</a>
+				</div>
+
+				<div class="nav-bottom-active">
+					<i class="el-icon-s-custom"></i>
+					<p class="nav-font-active">动态</p>
+				</div>
+			</nav>
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="swim.gdkm.dao.RegisterDao">
-	<select id="addRegisterByMap" parameterType="map" resultType="int">
+	<insert id="addRegisterByMap">
 		INSERT INTO register
 		<foreach item="item" index="key" collection="map" open="(" separator="," close=")">
 			${key}
@@ -12,5 +12,5 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		<foreach item="item" index="key" collection="map" open="(" separator="," close=")">
 			#{item}
 		</foreach>
-	</select>
+	</insert>
 </mapper>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/order.css">
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
+		<!-- Bootstrap4 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		<title>健之小屋</title>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but defaultvue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<!-- 顶部 -->
+			<p class="info">预约诊疗</p>
+			<hr class="hr" />
+			<p class="depict">为保证您准时就诊，请于就诊当日按所预约时间段提前30分钟到校医室取号，逾期作废。</p>
+			<!-- 联系我们 -->
+			<p class="subtitle">联系我们</p>
+			<div class="card">
+				<img class="card-img-top" src="img/communication.jpg" style="width:100%" onclick="window.location.href='Ordercommunication.html';">
+				<div class="card-body" onclick="window.location.href='Ordercommunication.html';">
+					<p class="card-title">获取协助</p>
+					<p class="card-describe">在线与专家聊天或让我们立即给您致电。</p>
+				</div>
+			</div>
+			<!-- 预约挂号 -->
+			<p class="subtitle">预约挂号</p>
+			<div class="card">
+				<img onclick="javascript:window.location.href='Orderclassify.html';" class="card-img-top" src="img/doctor.jpg" style="width:100%">
+				<div onclick="javascript:window.location.href='Orderclassify.html';" class="card-body">
+					<p class="card-title">安排就诊</p>
+					<p class="card-describe">查找学校附近的校医室。</p>
+				</div>
+			</div>
+			<!-- 底部导航栏 -->
+			<br /><br />
+			<nav class="navbar fixed-bottom">
+				<div class="nav-bottom">
+					<a href="Info.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-comment"></i>
+						<p class="nav-font">资讯</p>
+					</a>
+				</div>
+
+				<div class="nav-bottom-active">
+					<i class="el-icon-s-claim"></i>
+					<p class="nav-font-active">预约</p>
+				</div>
+				<div class="nav-bottom">
+					<a href="Medicalinsurance.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-finance"></i>
+						<p class="nav-font">医保</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Tablet.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-goods"></i>
+						<p class="nav-font">药品</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Dynamic.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-custom"></i>
+						<p class="nav-font">动态</p>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

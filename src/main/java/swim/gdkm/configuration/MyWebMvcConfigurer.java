@@ -12,7 +12,7 @@ import swim.gdkm.interceptor.LoginInterceptor;
 
 @Configuration
 public class MyWebMvcConfigurer implements WebMvcConfigurer {
-	String[] exclude = { "/css/*", "/img/*", "/js/*", "/images/*", "/*.html", "/Logout.action" };
+	String[] exclude = { "/css/*", "/img/*", "/js/*", "/images/*","/interaction-js/*"};
 
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
@@ -23,10 +23,11 @@ public class MyWebMvcConfigurer implements WebMvcConfigurer {
 
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("/images/**").addResourceLocations("file:D:/HealthRoomData/images/");
+		//registry.addResourceHandler("/images/**").addResourceLocations("file:/HealthRoomData/images/");
 		registry.addResourceHandler("/img/**").addResourceLocations("classpath:/static/img/");
 		registry.addResourceHandler("/js/**").addResourceLocations("classpath:/static/js/");
 		registry.addResourceHandler("/css/**").addResourceLocations("classpath:/static/css/");
+		registry.addResourceHandler("/interaction-js/**").addResourceLocations("classpath:/static/interaction-js/");
 		WebMvcConfigurer.super.addResourceHandlers(registry);
 	}
 }

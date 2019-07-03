@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/order.css">
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
+		<!-- Bootstrap4 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		 <script type="text/javascript" src="interaction-js/Orderother.js"></script>
+		<title>健之小屋</title>
+	</head>
+	<body onload="flush()"">
+		<noscript>
+			<strong>We're sorry but defaultvue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<!-- 返回 -->
+			<div id="back">
+				<a href="Orderclassify.html"><i class="el-icon-arrow-left"></i></a>
+			</div>
+			<!-- 顶部 -->
+			<p class="info" style="margin-top: 2%;">其他人员</p>
+			<hr class="hr" />
+			<p class="depict">您需要使用自己的身份证件来安排预约。请务必提供与身份证件上完全一致的姓名：</p>
+			<br /><br />
+
+			<div class="input_all">
+				<!-- 姓名 -->
+				<div id="sno">
+					<input required id="name" value="" type="text" name="" class="sno" placeholder="姓名">
+				</div>
+				<!-- 身份证号 -->
+				<br />
+				<div id="sno">
+					<input required id="id_no" value="" type="text" name="" class="sno" placeholder="身份证号">
+				</div>
+				<!-- 性别 -->
+				<br />
+				<div class="dropdown">
+					<button class="btn btn-default" data-toggle="dropdown"><span class="buttonText" id="choosecolor" style="color: gray;">性别</span>
+						<span class="caret"></span></button>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item" onclick="shows($(this).text())">男</a>
+						<a href="#" class="dropdown-item" onclick="shows($(this).text())">女</a>
+						<a href="#" class="dropdown-item" onclick="shows($(this).text())">其他</a>
+					</div>
+					<script>
+						function shows(a) {
+						$('.buttonText').text(a)
+						var color = document.getElementById('choosecolor');
+						color.style.color = 'black';
+					}
+				</script>
+				</div>
+				<!-- 出生日期 -->
+				<div class="block" id="born_student">
+					<el-date-picker id="birth" format="yyyy-MM-dd" value-format="yyyy-MM-dd"  v-model="value1" class="sno data-choose" type="date" placeholder="出生年月">
+					</el-date-picker>
+				</div>
+				<script>
+					var Main = {
+					data() {
+						return {
+							pickerOptions: {
+								disabledDate(time) {
+									return time.getTime() > Date.now();
+								},
+								shortcuts: [{
+									text: '今天',
+									onClick(picker) {
+										picker.$emit('pick', new Date());
+									}
+								}, {
+									text: '昨天',
+									onClick(picker) {
+										const date = new Date();
+										date.setTime(date.getTime() - 3600 * 1000 * 24);
+										picker.$emit('pick', date);
+									}
+								}, {
+									text: '一周前',
+									onClick(picker) {
+										const date = new Date();
+										date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
+										picker.$emit('pick', date);
+									}
+								}]
+							},
+							value1: '',
+						};
+					}
+				};
+				var Ctor = Vue.extend(Main)
+				new Ctor().$mount('#born_student')
+			</script>
+				<!-- 电话号码 -->
+				<br />
+				<div id="sno">
+					<input required id="mobile" value="" type="text" name="" class="sno" placeholder="电话">
+				</div>
+				<!-- 职业 -->
+				<br />
+				<div id="sno">
+					<input required id="job" value="" type="text" name="" class="sno" placeholder="职业">
+				</div>
+				<!-- 发病时间 -->
+				<div class="block" id="ill_time">
+					<el-date-picker id="disease_time" format="yyyy-MM-dd" value-format="yyyy-MM-dd" v-model="value1" class="sno data-choose" type="date" placeholder="发病时间">
+					</el-date-picker>
+				</div>
+				<script>
+					var Main = {
+					data() {
+						return {
+							pickerOptions: {
+								disabledDate(time) {
+									return time.getTime() > Date.now();
+								},
+								shortcuts: [{
+									text: '今天',
+									onClick(picker) {
+										picker.$emit('pick', new Date());
+									}
+								}, {
+									text: '昨天',
+									onClick(picker) {
+										const date = new Date();
+										date.setTime(date.getTime() - 3600 * 1000 * 24);
+										picker.$emit('pick', date);
+									}
+								}, {
+									text: '一周前',
+									onClick(picker) {
+										const date = new Date();
+										date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
+										picker.$emit('pick', date);
+									}
+								}]
+							},
+							value1: '',
+						};
+					}
+				};
+				var Ctor = Vue.extend(Main)
+				new Ctor().$mount('#ill_time')
+			</script>
+			<!-- 诊次 -->
+			<br />
+			<div class="dropdown">
+				<button class="btn btn-default" data-toggle="dropdown"><span class="buttonText4" id="choosecolor4" style="color: gray;">诊次</span>
+					<span class="caret"></span></button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" onclick="shows4($(this).text())">初诊</a>
+					<a href="#" class="dropdown-item" onclick="shows4($(this).text())">复诊</a>
+				</div>
+				<script>
+					function shows4(a) {
+					$('.buttonText4').text(a)
+					var color = document.getElementById('choosecolor4');
+					color.style.color = 'black';
+				}
+			</script>
+			</div>
+			<!-- 症状 -->
+			<br />
+			<div class="dropdown">
+				<button class="btn btn-default" data-toggle="dropdown"><span class="buttonText5" id="choosecolor5" style="color: gray;">症状</span>
+					<span class="caret"></span></button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">发热</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">头痛</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">胸痛</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">腹痛</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">肌肉关节痛</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">皮肤粘膜出血</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">咳嗽咳痰</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">心悸</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">恶心呕吐</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">腹泻</a>
+					<a href="#" class="dropdown-item" onclick="shows5($(this).text())">便血</a>
+				</div>
+				<script>
+					function shows5(a) {
+					$('.buttonText5').text(a)
+					var color = document.getElementById('choosecolor5');
+					color.style.color = 'black';
+				}
+			</script>
+			</div>
+			<br/>
+			
+			</div>
+
+			<!-- 继续 -->
+			<div id="row">
+				<a href="javascript:toOrderlocal();">
+					<el-button class="register" type="primary">继&nbsp;续</el-button>
+				</a>
+			</div>
+			<script>
+				new Vue().$mount('#row')
+			</script>
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

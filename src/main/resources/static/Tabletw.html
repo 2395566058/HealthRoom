@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/tablet.css">
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
+		<!-- Bootstrap4 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		<title>健之小屋</title>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but defaultvue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<!-- 返回 -->
+			<div id="back">
+				<a href="Tablet.html"><i class="el-icon-arrow-left"></i></a>
+			</div>
+			<!-- 顶部 -->
+			<p class="info" style="margin-top: 2%;">维生素矿物质用药</p>
+			<hr class="hr" />
+			<p class="subtitle">西药</p>
+			<p class="depict">治维生素矿物质的热门口碑药品</p>
+			<br />
+			<!-- 药品1 -->
+			<div id="tablet1">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m1.png">
+						<p class="m-name">百佳利小儿四维葡钙片</p>
+						<p class="m-company">山东新华制药股份有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>百佳利小儿四维葡钙片<br/><br/>
+						批准文号：<br/>国药准字H37023814<br/><br/>
+						生产企业：<br/>山东新华制药股份有限公司<br/><br/>
+						适应症：<br/>用于预防和补充儿童体内维生素及钙质的不足。
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet1',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			<!-- 药品2 -->
+			<div id="tablet2">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m2.png">
+						<p class="m-name">维D2磷酸氢钙片</p>
+						<p class="m-company">江西天之海药业股份有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>维D2磷酸氢钙片<br/><br/>
+						批准文号：<br/>国药准字H36022272<br/><br/>
+						生产企业：<br/>山江西天之海药业股份有限公司<br/><br/>
+						适应症：<br/>用于儿童、孕妇及哺乳期妇女钙的补充。<br/><br/>
+						治疗疾病：<br/>哺乳
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet2',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			<!-- 药品3 -->
+			<div id="tablet3">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m3.png">
+						<p class="m-name">多维元素片</p>
+						<p class="m-company">中美上海施贵宝制药有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>多维元素片<br/><br/>
+						批准文号：<br/>国药准字H20041236<br/><br/>
+						生产企业：<br/>中美上海施贵宝制药有限公司<br/><br/>
+						适应症：<br/>营养补充药。用于预防因维生素和微量元素缺乏所引起的各种疾病。
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet3',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			<!-- 药品4 -->
+			<div id="tablet4">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m4.png">
+						<p class="m-name">玛特纳(复方多维元素片(23))</p>
+						<p class="m-company">惠氏制药有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>玛特纳(复方多维元素片(23))<br/><br/>
+						批准文号：<br/>国药准字H20050875<br/><br/>
+						生产企业：<br/>惠氏制药有限公司<br/><br/>
+						适应症：<br/>用于孕妇及哺乳妇女多种维生素和矿物质的补充。<br/><br/>
+						治疗疾病：<br/>哺乳
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet4',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			
+			
+			<!-- 中成药 -->
+			<p class="subtitle" style="margin-top: 15%;">中成药</p>
+			<p class="depict">治维生素矿物质的热门口碑药品</p>
+			
+			<!-- 药品5 -->
+			<div id="tablet5">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m5.png">
+						<p class="m-name">同济堂（仙灵骨葆胶囊）</p>
+						<p class="m-company">贵州同济堂制药有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>同济堂（仙灵骨葆胶囊）<br/><br/>
+						批准文号：<br/>国药准字Z20025337<br/><br/>
+						生产企业：<br/>贵州同济堂制药有限公司<br/><br/>
+						适应症：<br/>滋补肝肾，活血通络，强筋壮骨。用于肝肾不足，瘀血阻络所致骨质疏松症，症见腰脊疼痛，足膝酸软，乏力。<br/><br/>
+						治疗疾病：<br/>骨质疏松
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet5',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			<!-- 药品6 -->
+			<div id="tablet6">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m6.png">
+						<p class="m-name">瑞克（生血宁片）</p>
+						<p class="m-company">武汉联合药业有限责任公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>瑞克（生血宁片）<br/><br/>
+						批准文号：<br/>国药准字Z20030088<br/><br/>
+						生产企业：<br/>武汉联合药业有限责任公司<br/><br/>
+						适应症：<br/>益气补血。生血宁片用于缺铁性贫血属气血两虚证者，症见：面部、肌肤萎黄或苍白，神疲乏力，眩晕耳鸣，心悸气短，舌淡或胖，脉弱等.主要用于治疗因铁摄入不足、铁需求量增加、铁吸收不良、慢性失血、手术后失血等引起的缺铁性贫血。<br/><br/>
+						治疗疾病：<br/>耳鸣 贫血 心悸 缺铁性贫血 眩晕 小儿缺铁性贫血 营养性缺铁性贫血 妊娠合并缺铁性贫血 失血 虚证 
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet6',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			<!-- 药品7 -->
+			<div id="tablet7">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m7.png">
+						<p class="m-name">聪而高（智杞颗粒）</p>
+						<p class="m-company">湖北汇瑞药业股份有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>聪而高（智杞颗粒）<br/><br/>
+						批准文号：<br/>国药准字B20050026<br/><br/>
+						生产企业：<br/>湖北汇瑞药业股份有限公司<br/><br/>
+						适应症：<br/>滋补肝肾。用于儿童因血铅高造成的体力弱、智力差、乏力、饮食少、头晕目涩、脉细、舌苔薄白的肝肾阴虚证。<br/><br/>
+						治疗疾病：<br/>头晕&nbsp;虚证
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet7',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+			<!-- 药品8 -->
+			<div id="tablet8">
+				<div class="medical">
+					<div class="m1" @click="visible = true">
+						<img class="m-icon" src="img/m8.png">
+						<p class="m-name">甘草锌胶囊</p>
+						<p class="m-company">湖南千金湘江药业股份有限公司</p>
+					</div>
+				</div>
+				<el-dialog :visible.sync="visible" title="概述">
+					<p style="font-size: 1.8vh;">
+						药品名称：<br/>甘草锌胶囊<br/><br/>
+						批准文号：<br/>国药准字H43021827<br/><br/>
+						生产企业：<br/>湖南千金湘江药业股份有限公司<br/><br/>
+						适应症：<br/>由于锌缺乏症引起的儿童厌食、异食癖、生长发育不良。口腔溃疡症。<br/><br/>
+						治疗疾病：<br/>异食癖 锌缺乏症 生长障碍 创伤性溃疡
+					</p>
+				</el-dialog>
+			</div>
+			<script>
+				new Vue({
+					el: '#tablet8',
+					data: function() {
+						return {
+							visible: false
+						}
+					},
+				})
+			</script>
+			
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

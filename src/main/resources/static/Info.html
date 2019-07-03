@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/info.css">
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
+		<!-- Bootstrap4 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		<!-- Swiper -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<script src="js/swiper.animate1.0.3.min.js"></script>
+		<title>健之小屋</title>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but defaultvue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<!-- 顶部 -->
+			<p class="info">资讯</p>
+			<hr class="hr" />
+			<p class="subtitle">专属于你</p>
+			<p class="depict">下午好，这是这周为你提供的生活资讯。</p>
+
+			<!-- 热点资讯 -->
+			<ul class="slide-box">
+				<li class="slide-item">
+					<a href="Info-1.html"><div class="card1">
+						<!-- 分类 -->
+						<div class="classify">
+							<p>饮食养生</p>
+						</div>
+						<!-- 标题 -->
+						<div class="gradient">
+							<p class="card-tittle">吃小龙虾要注意这些误区</p>
+							<img class="card-icon" src="img/see.png">
+						</div>
+					</div></a>
+				</li>
+				<li class="slide-item">
+					<div class="card2">
+						<!-- 分类 -->
+						<div class="classify">
+							<p>中医养生</p>
+						</div>
+						<!-- 标题 -->
+						<div class="gradient">
+							<p class="card-tittle">中医经络减肥该注意的事</p>
+							<img class="card-icon" src="img/see.png">
+						</div>
+					</div>
+				</li>
+				<li class="slide-item">
+					<div class="card3">
+						<!-- 分类 -->
+						<div class="classify">
+							<p>保健养生</p>
+						</div>
+						<!-- 标题 -->
+						<div class="gradient">
+							<p class="card-tittle">健康运动可以促进头脑再发育</p>
+							<img class="card-icon" src="img/see.png">
+						</div>
+					</div>
+				</li>
+			</ul>
+
+			<!-- 清除浮动 -->
+			<div class="clear"></div>
+
+			<!-- 其他资讯 -->
+			<p class="subtitle">热门精选</p>
+			<ul class="slide-box">
+				<li class="slide-item">
+					<div class="card4">
+						<!-- 分类 -->
+						<div class="classify2">
+							<p>TOP1</p>
+						</div>
+						<!-- 标题 -->
+						<div class="gradient">
+							<p class="card-tittle">癌细胞最怕这些食物</p>
+							<img class="card-icon" src="img/see.png">
+						</div>
+					</div>
+				</li>
+				<li class="slide-item">
+					<div class="card5">
+						<!-- 分类 -->
+						<div class="classify2">
+							<p>TOP2</p>
+						</div>
+						<!-- 标题 -->
+						<div class="gradient">
+							<p class="card-tittle">5个身体症状，说明肝病在恶化</p>
+							<img class="card-icon" src="img/see.png">
+						</div>
+					</div>
+				</li>
+				<li class="slide-item">
+					<div class="card6">
+						<!-- 分类 -->
+						<div class="classify2">
+							<p>TOP3</p>
+						</div>
+						<!-- 标题 -->
+						<div class="gradient">
+							<p class="card-tittle">厨房里的10大有毒素食物</p>
+							<img class="card-icon" src="img/see.png">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<br />
+			<br />
+
+			<!-- 底部导航栏 -->
+			<nav class="navbar fixed-bottom">
+
+				<div class="nav-bottom-active">
+					<i class="el-icon-s-comment"></i>
+					<p class="nav-font-active">资讯</p>
+				</div>
+
+				<div class="nav-bottom">
+					<a href="Order.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-claim"></i>
+						<p class="nav-font">预约</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Medicalinsurance.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-finance"></i>
+						<p class="nav-font">医保</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Tablet.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-goods"></i>
+						<p class="nav-font">药品</p>
+					</a>
+				</div>
+				<div class="nav-bottom">
+					<a href="Dynamic.html" style="color: #a1a1a1;">
+						<i class="el-icon-s-custom"></i>
+						<p class="nav-font">动态</p>
+					</a>
+				</div>
+			</nav>
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

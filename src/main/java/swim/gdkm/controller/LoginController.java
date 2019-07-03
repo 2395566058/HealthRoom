@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import swim.gdkm.service.UsersService;
 
@@ -21,21 +22,22 @@ public class LoginController {
 	 * 登录验证
 	 */
 	@RequestMapping("/tologin")
+	@ResponseBody
 	public String tologin(String username, String password, HttpServletRequest request) {
 		boolean result = usersService.existUser(username, password);
 		if (result != true) {
-			request.setAttribute("msg", "账号或密码错误");
-			return "login.html";
+			return "账号或密码错误!";
 		}
 		int userid = usersService.getUseridByUsernameAndPassword(username, password);
 		request.getSession().setAttribute("USER", userid);
-		return "xxx.html";
+		return "true";
 	}
 	
 	/*
 	 * 退出登录
 	 */
 	@RequestMapping("/tologout")
+	@ResponseBody
 	public String logout(HttpServletRequest request) {
 		request.getSession().invalidate();
 		request.setAttribute("msg", "已登出！");

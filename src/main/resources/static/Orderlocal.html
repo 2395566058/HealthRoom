@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/order.css">
+		<script src="js/vue.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/order.js"></script>
+		<!-- Bootstrap4 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		 crossorigin="anonymous">
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		 <script src="interaction-js/Orderlocal.js"></script>
+		<title>健之小屋</title>
+	</head>
+	<body>
+		<noscript>
+			<strong>We're sorry but defaultvue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+		</noscript>
+		<div id="app">
+			<!-- 返回 -->
+			<div id="back">
+				<a href="javascript:returnup();"><i class="el-icon-arrow-left"></i></a>
+				<a href="javascript:addRegister();"><p class="success">完成</p></a>
+			</div>
+			<!-- 顶部 -->
+			<p class="info" style="margin-top: 2%;">预约诊疗</p>
+			<hr class="hr" />
+			<p class="depict">查找学校附近的校医室。</p>
+			<br /><br />
+			<!-- 搜索地点 -->
+			<div id="sno">
+				<input required id="" type="text" name="" class="sno" placeholder="广东科贸职业学院" readonly>
+				<img class="sno-icon" src="img/local.png">
+			</div>
+
+			<!-- 结果 -->
+			<div class="result">
+				<p class="result-font">粤科贸 - 校医室</p>
+				<p class="result-font2">优质医疗★</p>
+				<p class="result-font3">可酌情提供当日医疗服务（严重情况请自行前往医院）</p>
+				<p class="result-address">广东省广州市白云区石井街道石庆路388号</p>
+				<p class="result-address2">广州，广东&nbsp;510000</p>
+				<p class="result-address2">(020)22014373</p>
+			</div>
+
+			<!-- 选择时间 -->
+			<div class="result2">
+				<!-- 4 -->
+				<div class="data" style="color: #d3d3d3;">
+					<p class="week">四</p>
+					<p class="day">4</p>
+				</div>
+
+				<!-- 5 -->
+				<div class="data" onclick="five()">
+					<p class="week">五</p>
+					<p class="day" id="five">5</p>
+				</div>
+
+				<!-- 6 -->
+				<div class="data" onclick="six()">
+					<p class="week">六</p>
+					<p class="day" id="six">6</p>
+				</div>
+				<div class="data" onclick="seven()">
+					<p class="week">日</p>
+					<p class="day" id="seven">7</p>
+				</div>
+				<div class="data" onclick="eight()">
+					<p class="week">一</p>
+					<p class="day" id="eight">8</p>
+				</div>
+				<div class="data" onclick="nine()">
+					<p class="week">二</p>
+					<p class="day" id="nine">9</p>
+				</div>
+				<div class="data" onclick="ten()">
+					<p class="week">三</p>
+					<p class="day" id="ten">10</p>
+				</div>
+				<div class="data" onclick="eleven()">
+					<p class="week">四</p>
+					<p class="day" id="eleven">11</p>
+				</div>
+			</div>
+
+			<div class="clear"></div>
+
+			<!-- 时间选择 -->
+			<div hidden class="day5" id="day5">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+			<div hidden class="day5" id="day6">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+			<div hidden class="day5" id="day7">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+			<div hidden class="day5" id="day8">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+			<div hidden class="day5" id="day9">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+			<div hidden class="day5" id="day10">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+			<div hidden class="day5" id="day11">
+				<button class="time" onclick="gettime(this)">上午08:00</button>
+				<button class="time" onclick="gettime(this)">上午09:00</button>
+				<button class="time" onclick="gettime(this)">上午10:00</button>
+				<button class="time" onclick="gettime(this)">上午11:00</button>
+				<button class="time" onclick="gettime(this)">下午12:00</button>
+				<button class="time" onclick="gettime(this)">下午01:00</button>
+				<button class="time" onclick="gettime(this)">下午02:00</button>
+				<button class="time" onclick="gettime(this)">下午03:00</button>
+				<button class="time" onclick="gettime(this)">下午04:00</button>
+				<button class="time" onclick="gettime(this)">下午05:00</button>
+				<button class="time" onclick="gettime(this)">下午06:00</button>
+				<button class="time" onclick="gettime(this)">下午07:00</button>
+				<button class="time" onclick="gettime(this)">下午08:00</button>
+			</div>
+		</div>
+		<!-- built files will be auto injected -->
+	</body>
+</html>

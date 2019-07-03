@@ -1,0 +1,138 @@
+.tittle {
+	text-align: center;
+	margin-top: 8%;
+}
+
+.tittle-tablet {
+	width: 38%;
+}
+
+.tablet-content {
+	margin-top: 2%;
+	color: #9b9b9b;
+	font-size: 2.1vh;
+}
+
+.c-all {
+	text-align: center;
+}
+
+.c1 {
+	margin: 0 auto;
+	margin-top: 10%;
+	width: 41vh;
+	height: 41vh;
+	border-radius: 1em;
+	background: #000000;
+	background-size: 100%;
+	background-image: url(../img/c1.jpg);
+}
+
+.c2 {
+	margin: 0 auto;
+	margin-top: 10%;
+	width: 41vh;
+	height: 41vh;
+	border-radius: 1em;
+	background: #000000;
+	background-size: 100%;
+	background-image: url(../img/c2.jpg);
+}
+
+.c3 {
+	margin: 0 auto;
+	margin-top: 10%;
+	width: 41vh;
+	height: 41vh;
+	border-radius: 1em;
+	background: #000000;
+	background-size: 100%;
+	background-image: url(../img/c3.jpg);
+}
+
+.c-black{
+	position: absolute;
+	width: 41vh;
+	height: 41vh;
+	background: black;
+	border-radius: 1em;
+	opacity: 0.5;
+}
+
+.c-font {
+	position: relative;
+	line-height: 41vh;
+	font-weight: bold;
+	color: white;
+	font-size: 5vh;
+}
+
+.el-icon-arrow-left {
+	margin-left: 3%;
+	margin-top: 5%;
+	color: #31affe !important;
+	font-size: 2.8vh;
+}
+
+.info {
+	margin-top: 30px;
+	margin-left: 5%;
+	font-size: 3.5vh;
+	font-weight: bold;
+}
+
+.hr {
+	float: right;
+	width: 95%;
+	margin-top: -5px;
+}
+
+.subtitle {
+	margin-left: 5%;
+	font-size: 2.8vh;
+}
+
+.depict {
+	margin-top: -10px;
+	margin-left: 5%;
+	font-size: 2.1vh;
+	color: #9b9b9b;
+}
+
+.medical {
+	width: 90%;
+	height: 10vh;
+	margin-left: 5%;
+	margin-bottom: 6%;
+	background: white;
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.m-icon {
+	float: left;
+	margin-top: 2%;
+	margin-left: 2%;
+	width: 10vh;
+}
+
+.m-name {
+	float: left;
+	margin-left: 1%;
+	margin-top: 1%;
+	font-weight: bold;
+	font-size: 2.2vh;
+}
+
+.m-company {
+	float: left;
+	margin-left: 1%;
+	margin-top: -5%;
+	font-size: 1.8vh;
+	color: #9B9B9B;
+}
+
+el-dialog {
+	width: 50px !important;
+	height: 50px;
+}

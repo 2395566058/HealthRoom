@@ -1,0 +1,69 @@
+.info {
+	margin-top: 30px;
+	margin-left: 5%;
+	font-size: 3.5vh;
+	font-weight: bold;
+}
+
+.depict {
+	margin-top: -10px;
+	margin-left: 5%;
+	font-size: 2.1vh;
+	color: #9b9b9b;
+}
+
+.hr {
+	float: right;
+	width: 95%;
+	margin-top: -5px;
+}
+
+.care {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.content {
+	margin-left: 8%;
+	margin-top: 15%;
+}
+
+.content2 {
+	margin-left: 5%;
+	margin-top: -10%;
+}
+
+.tittle {
+	font-size: 2.1vh;
+	font-weight: bold;
+	color: #1f1f1f;
+}
+
+.describe {
+	float: right;
+	margin-right: 8%;
+	color: #6c757d;
+}
+
+.describe2 {
+	float: right;
+	margin-right: 5%;
+	color: #6c757d;
+}
+
+.more-all {
+	margin-top: 38%;
+	text-align: center;
+}
+
+.hr2 {
+	width: 95%;
+	margin-left: 0%;
+}
+
+.el-icon-arrow-left {
+	margin-left: 3%;
+	margin-top: 5%;
+	color: #31affe !important;
+	font-size: 2.8vh;
+}
