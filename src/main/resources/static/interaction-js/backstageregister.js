@@ -16,7 +16,7 @@ function flush() {
 					div.setAttribute("class","card");
 					var dataa="";
 					for(var key in array[i]){
-						dataa=dataa+"<p class='card-tittle'>"+key+":"+array[i][key]+"</p>";
+						dataa=dataa+"<p class='card-font'>"+key+":"+array[i][key]+"</p>";
 					}
 					dataa=dataa+"<br/>";
 					div.innerHTML = dataa;
