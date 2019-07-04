@@ -1,0 +1,80 @@
+.tittle {
+	text-align: center;
+	margin-top: 8%;
+}
+
+.tittle-tablet {
+	width: 50%;
+}
+
+.icon-all {
+	margin-top: 20%;
+	width: 90%;
+	margin-left: 5%;
+}
+.icon {
+	float: left;
+	text-align: center;
+	width: 45%;
+	background: white;
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.icon-font {
+	font-size: 2vh;
+	margin-top: 5%;
+}
+
+.icon2 {
+	float: left;
+	text-align: center;
+	width: 45%;
+	margin-left: 10%;
+	background: white;
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.info {
+	margin-top: 30px;
+	margin-left: 5%;
+	font-size: 3.5vh;
+	font-weight: bold;
+}
+
+.hr {
+	float: right;
+	width: 95%;
+	margin-top: -15px;
+}
+
+.el-icon-arrow-left {
+	margin-left: 3%;
+	margin-top: 5%;
+	color: #31affe !important;
+	font-size: 2.8vh;
+}
+
+.card {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	background: white;
+	border-radius: 1em;
+	box-shadow: darkgrey 0px 0px 10px 1px;
+}
+
+.card-tittle {
+	margin-left: 5%;
+	padding-top: 5%;
+	margin-bottom: -2%;
+	font-size: 2.8vh;
+	font-weight: bold;
+}
+
+.card-font {
+	margin-left: 5%;
+	margin-bottom: -5%;
+	font-size: 2.1vh;
+}

@@ -13,4 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			#{item}
 		</foreach>
 	</insert>
+	<select id="getRegister" resultType="register">
+		SELECT * FROM register ORDER BY reg_no
+	</select>
 </mapper>
